@@ -54,22 +54,42 @@ nav a:hover{
     color:#ff8800;
 }
 
-.hero{
-    height:100vh;
-    background:url('https://cdn.discordapp.com/attachments/1511944810561278022/1511945329644142712/upscalemedia-transformed2.png?ex=6a224c51&is=6a20fad1&hm=6d5d8ee4d97a7f9f1a198192f0756cb8b4dba322ba6400fd87c439f7df22ceb8&');
-    background-size:contain;
-    background-repeat:no-repeat;
-    background-position:center top;
+body{
+    margin:0;
+    padding:0;
+    background:#000;
 }
 
-.overlay{
-    height:100%;
-    background:rgba(0,0,0,.55);
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+    padding:15px 50px;
+    background:#000;
+    z-index:1000;
+}
+
+.logo img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+}
+
+/* espaço pra não ficar atrás do header */
+.content{
+    padding-top:140px;
     text-align:center;
+}
+
+/* imagem normal abaixo do menu */
+.hero-img{
+    width:100%;
+    height:auto;
+    display:block;
 }
 
 .hero h1{
@@ -115,13 +135,12 @@ nav a:hover{
 
 </header>
 
-<section class="hero">
-    <div class="overlay">
-        <h1>JHONNY DRONE</h1>
-        <p>Filmagens aéreas profissionais</p>
-        <a href="#" class="btn">Solicitar orçamento</a>
-    </div>
-</section>
+<div class="content">
+
+    <img class="hero-img"
+    src="https://cdn.discordapp.com/attachments/1511944810561278022/1511945329644142712/upscalemedia-transformed2.png">
+
+</div>
 
 </body>
 </html>
