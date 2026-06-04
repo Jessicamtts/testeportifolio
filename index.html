@@ -21,20 +21,22 @@ body{
 }
 
 header{
-    position:absolute;
+    position:fixed;
     top:0;
     left:0;
     width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 50px;
-    z-index:10;
+    padding:15px 50px;
+    background:#000;
+    z-index:1000;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:bold;
+.logo img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
 }
 
 nav{
@@ -94,7 +96,9 @@ nav a:hover{
 <body>
 
 <header>
-    <div class="logo">JHONNY DRONE</div>
+    <div class="logo">
+        <img src="https://via.placeholder.com/120x120" alt="Logo">
+    </div>
 
 ```
 <nav>
