@@ -46,14 +46,12 @@ nav a:hover{
     color:#ff8800;
 }
 
-/* CONTEUDO */
-.content{
-    padding-top:160px;
-    max-width:1200px;
-    margin:auto;
+/* HERO */
+.hero{
+    width:100%;
+    margin-top:151px; /* altura do header */
 }
 
-/* HERO */
 .hero-img{
     width:100%;
     height:auto;
@@ -70,16 +68,3 @@ nav a:hover{
     text-decoration:none;
     border-radius:5px;
 }
-
-.hero{
-    width:100%;
-    margin-top:150px; /* altura aproximada do header */
-}
-
-.hero-img{
-    width:100%;
-    height:auto;
-    display:block;
-}
-
-
